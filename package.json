@@ -1,0 +1,23 @@
+{
+  "name": "lc-scripts",
+  "version": "1.0.0",
+  "description": "Scripts to test lc-hub integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosmartinez7/lc-scripts.git"
+  },
+  "author": "Marcos Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcosmartinez7/lc-scripts/issues"
+  },
+  "homepage": "https://github.com/marcosmartinez7/lc-scripts#readme",
+  "dependencies": {
+    "ethereumjs-tx": "^2.1.0",
+    "web3": "^1.0.0-beta.35"
+  }
+}
