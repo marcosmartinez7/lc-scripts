@@ -14,7 +14,7 @@ const  web3 = new Web3('http://localhost:4444');
 
 const decryptedAccount = web3.eth.accounts.decrypt(keystore, 'infuy123');
 token=  new web3.eth.Contract(tokenAbi, tokenAddress);
-registry=  new web3.eth.Contract(tokenNetworkAbi, tokenNetworkAddress);
+tokenNetwork=  new web3.eth.Contract(tokenNetworkAbi, tokenNetworkAddress);
 
 
 
@@ -41,7 +41,7 @@ web3.eth.getTransactionCount(hubAddress, function(e, tc){
         "gasLimit":"0x012527",
         "to":tokenNetworkAddress,
         "value":"0x00",
-        "data":registry.methods.setTotalDeposit(30 ,hubAddress, 10000000000, partnerAddress).encodeABI(),
+        "data":tokenNetwork.methods.setTotalDeposit(30 ,hubAddress, 10000000000, partnerAddress).encodeABI(),
         "chainId":33
     };
     decryptedAccount.signTransaction(deposit ,function(e,signed){
@@ -50,8 +50,5 @@ web3.eth.getTransactionCount(hubAddress, function(e, tc){
     });
 })
 
-
-//0.000000001
-//0.00000001
 
 
