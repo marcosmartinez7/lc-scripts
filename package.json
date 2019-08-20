@@ -2,7 +2,7 @@
   "name": "lc-scripts",
   "version": "1.0.0",
   "description": "Scripts to test lc-hub integration",
-  "main": "index.js",
+  "main": "deposit.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
