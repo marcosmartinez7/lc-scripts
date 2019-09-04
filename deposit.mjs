@@ -16,7 +16,7 @@ web3.eth.getTransactionCount(address2, function(e, tc){
         "gasLimit":"0x012527",
         "to":tokenAddress,
         "value":"0x00",
-        "data": token.methods.approve(tokenNetworkAddress, "1000000000000000").encodeABI(),
+        "data": token.methods.approve(tokenNetworkAddress, "1000000000000004").encodeABI(),
         "chainId":33
     };
 
@@ -31,7 +31,7 @@ web3.eth.getTransactionCount(address2, function(e, tc){
         "gasLimit":"0x0304b1",
         "to":tokenNetworkAddress,
         "value":"0x00",
-        "data":tokenNetwork.methods.setTotalDeposit(channelId ,address2, "1000000000000000", partner2).encodeABI(),
+        "data":tokenNetwork.methods.setTotalDeposit(channelId ,address2, "9000000000000003", partner2).encodeABI(),
         "chainId":33
     };
 

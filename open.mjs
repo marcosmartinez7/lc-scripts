@@ -6,7 +6,7 @@ const decryptedAccount = web3.eth.accounts.decrypt(keystore2, 'infuy123');
 const tokenNetwork=  new web3.eth.Contract(tokenNetworkAbi, tokenNetworkAddress);
 
 const participant1="0x3278deed4ee3de26bb53ffb82f4be82a6bb66d19";
-const participant2="0x2582D3dC3E54093EaE255E90136Aa1925F1ec0d9";
+const participant2="0x7D7AcAea63440831920B0B83EC1fD40AfF54fB39";
 
 web3.eth.getTransactionCount(address2, function(e, tc){
     console.log("Transaction count "+tc);
