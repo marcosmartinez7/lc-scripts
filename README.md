@@ -1,8 +1,7 @@
 # lc-scripts
 
-Light client ES6 scripts to interact with Lumino HUBs
+Light client scripts to interact with Lumino HUBs
 
-- node --experimental-modules open.mjs 
-- node --experimental-modules deposit.mjs 
+- node open.js 
+- node deposit.js 
 
-See https://nodejs.org/api/esm.html
