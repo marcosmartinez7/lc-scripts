@@ -45,10 +45,9 @@ web3.eth.getTransactionCount(lc_address, function(e, tc){
         "chainId":33
     };
 
-    decryptedAccount.signTransaction(deposit ,function(e,signed){
-        console.log("Deposit: " +signed.rawTransaction);
+    decryptedAccount.signTransaction(deposit
+    ).then(console.log);
 
-    });
 })
 
 
