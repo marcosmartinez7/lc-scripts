@@ -26,7 +26,6 @@ web3.eth.getTransactionCount(lc_address, function(e, tc){
         "data": tokenNetwork.methods.openChannel(lc_address, partnerAddress, 500).encodeABI(),
         "chainId":33
     };
-    console.log("a")
 
     decryptedAccount.signTransaction(open
     ).then(console.log);
